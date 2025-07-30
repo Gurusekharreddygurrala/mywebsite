@@ -1,4 +1,3 @@
-<!-- projects.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,45 +7,45 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="projects.html">Projects</a>
-    <a href="contact.html">Contact</a>
-    <button class="toggle-btn" onclick="toggleDarkMode()">Toggle Dark Mode</button>
-  </nav>
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="nav-logo">Sekhar's Portfolio</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <section>
-    <h2>Projects</h2>
-    <ul>
-      <li><strong>College Chatbot</strong> – Built using Python, NLTK, and Tkinter for handling student queries.</li>
-      <li><strong>Ethical Hacking Toolkit</strong> – Used Kali Linux tools for LFI, SQLi, CSRF, Hydra, Burp Suite.</li>
-      <li><strong>Portfolio Website</strong> – This website, created with HTML, CSS, and GitHub Pages.</li>
-    </ul>
-  </section>
+  <main>
+    <section class="projects">
+      <h1 class="section-title">My Projects</h1>
+      <div class="project-grid">
+        <div class="project-card">
+          <h3>College Chatbot</h3>
+          <p>Built using Python, NLTK, and Tkinter to handle basic student queries in a simple GUI.</p>
+        </div>
+        <div class="project-card">
+          <h3>Ethical Hacking Toolkit</h3>
+          <p>A toolkit with tools and scripts demonstrating SQL Injection, LFI, CSRF, and Brute Force using Burp Suite, Hydra, and Juice Shop.</p>
+        </div>
+        <div class="project-card">
+          <h3>Mini Portfolio Website</h3>
+          <p>This very website! Created with HTML, CSS, and hosted using GitHub Pages with responsive design and smooth navigation.</p>
+        </div>
+      </div>
 
-  <section>
-    <h2>Certifications</h2>
-    <ul>
-      <li>AWS Cloud Practitioner Essentials – Udemy – 2024</li>
-      <li>Natural Language Processing – Coursera – 2024</li>
-      <li>Intro to Ethical Hacking – Great Learning – 2024</li>
-      <li>Content Writing – Internshala – 2023</li>
-    </ul>
-    <div class="cert-gallery">
-      <img src="NLP1.jpg" alt="Internship Certificate">
-      <img src="NLP2.jpg" alt="Completion Certificate">
-    </div>
-  </section>
+      <h2 class="section-title">Certificates</h2>
+      <div class="certificates">
+        <img src="NLP1.jpg" alt="NLP Internship Certificate">
+        <img src="NLP2.jpg" alt="NLP Completion Certificate">
+      </div>
+    </section>
+  </main>
 
-  <section>
-    <h2>Skills</h2>
-    <ul>
-      <li>Languages: Java, Python, HTML, CSS</li>
-      <li>Tools: Burp Suite, Hydra, OWASP Juice Shop</li>
-      <li>Topics: SQL Injection, CSRF, LFI, Command Injection</li>
-    </ul>
-  </section>
-
-  <script src="script.js"></script>
+  <footer>
+    <p>&copy; 2025 Gurrala Guru Sekhar Reddy</p>
+  </footer>
 </body>
 </html>
