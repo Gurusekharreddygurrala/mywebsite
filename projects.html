@@ -7,12 +7,72 @@
   <title>Projects | Gurrala Guru Sekhar Reddy</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .project-card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 1rem;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .project-title {
+      font-size: 1.3rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+      color: #0077b6;
+    }
+
+    .project-tags {
+      margin-top: 0.5rem;
+    }
+
+    .project-tags span {
+      background: #e0f4ff;
+      color: #0077b6;
+      padding: 0.3rem 0.6rem;
+      border-radius: 0.4rem;
+      font-size: 0.8rem;
+      margin-right: 0.4rem;
+    }
+
+    .project-buttons {
+      margin-top: 1rem;
+    }
+
+    .project-buttons a {
+      text-decoration: none;
+      margin-right: 0.5rem;
+      background: #0077b6;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
+      font-size: 0.9rem;
+    }
+
+    body.dark-mode .project-card {
+      background: #1f1f1f;
+      color: #f0f0f0;
+    }
+  </style>
 </head>
 
 <body>
   <nav>
     <div class="nav-container">
-      <div class="logo">Sekhar's Portfolio</div>
+      <div class="logo">Sekhar's Website</div>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a class="active" href="projects.html">Projects</a></li>
@@ -25,26 +85,40 @@
   <main class="main-container">
     <section class="section">
       <h2 class="section-title">My Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-title">College Chatbot</div>
+          <p>Developed using Python, NLTK, and Tkinter. Responds to student queries about courses and campus.</p>
+          <div class="project-tags">
+            <span>Python</span><span>NLTK</span><span>Tkinter</span>
+          </div>
+          <div class="project-buttons">
+            <a href="#" target="_blank">Source Code</a>
+          </div>
+        </div>
 
-      <div class="project">
-        <h3>College Chatbot</h3>
-        <p>Built using Python, NLTK, and Tkinter to handle basic student queries in a simple GUI.</p>
-      </div>
+        <div class="project-card">
+          <div class="project-title">Ethical Hacking Toolkit</div>
+          <p>A toolset using Kali Linux with LFI, SQLi, CSRF, and brute force attacks tested in Juice Shop.</p>
+          <div class="project-tags">
+            <span>Kali Linux</span><span>Burp Suite</span><span>Hydra</span>
+          </div>
+          <div class="project-buttons">
+            <a href="#" target="_blank">Documentation</a>
+          </div>
+        </div>
 
-      <div class="project">
-        <h3>Ethical Hacking Toolkit</h3>
-        <p>A toolkit with tools and scripts demonstrating SQL Injection, LFI, CSRF, and Brute Force using Burp Suite, Hydra, and Juice Shop.</p>
-      </div>
-
-      <div class="project">
-        <h3>Mini Portfolio Website</h3>
-        <p>This very website! Created with HTML, CSS, and hosted using GitHub Pages with responsive design and smooth navigation.</p>
-      </div>
-
-      <h2 class="section-title">Certificates</h2>
-      <div class="certificates">
-        <img src="assets/NLP1.jpg" alt="NLP Internship Certificate" class="certificate-img">
-        <img src="assets/NLP2.jpg" alt="NLP Completion Certificate" class="certificate-img">
+        <div class="project-card">
+          <div class="project-title">Portfolio Website</div>
+          <p>This multi-page portfolio built using HTML, CSS, and JavaScript. Hosted on GitHub Pages.</p>
+          <div class="project-tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+          <div class="project-buttons">
+            <a href="https://gurusekharreddygurrala.github.io/annamacharya" target="_blank">Live Demo</a>
+            <a href="https://github.com/Gurusekharreddygurrala/annamacharya" target="_blank">Source Code</a>
+          </div>
+        </div>
       </div>
     </section>
   </main>
